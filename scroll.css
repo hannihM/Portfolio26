@@ -63,9 +63,36 @@ main {
   }
 }
 
+/* From Uiverse.io by SachinKumar666 */ 
+.project {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+}
 
+/* Hover Effects */
+.project:hover {
+  transform: translateY(-10px);
+}
 
-.text {
-  display: flex;
-  justify-content: center;
+/* Active State */
+.project:active {
+  transform: translateY(-5px) scale(0.98);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
