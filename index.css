@@ -3,14 +3,26 @@
     gap: 20px;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;    
+    padding: 20px; 
+    position: sticky;
+    top: 0;  
 }
 nav a{
     text-decoration: none;
     color: white;
     display: flex;
     align-items: center;
-    gap: 2px
+    gap: 2px;
+    padding: 6px;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+nav a:active{
+    background-color: white;
+    color: black;
 }
 .callout{
     background-color: white;
@@ -44,12 +56,15 @@ nav a{
 .text {
   display: flex;
   width: 100dvw;
-  height: 100%;
+  height: 100dvh;
   align-items: center;
 }
+.text img{
+    padding-top: 10%;
+}
+
 .words{
-    width: 45%;
-    height: 50vh;
+    padding-right: 5%;
 }
 .socials{
     display: flex;
@@ -68,15 +83,15 @@ nav a{
 }
 
 .stack{
-    padding: 10px;
     display: flex;
+    padding: 10px;
     gap: 10px;
     flex-wrap: wrap;
     align-items: center;
 }
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 50% 50%;
     gap: 20px;
 }
 .info{
@@ -96,4 +111,65 @@ nav a{
 a:hover{
     transition: all 0.2s ease;
     transform: translateY(-2px);
+}
+.services{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.service{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.2s ease;
+}
+.service:hover{
+    transition: all 0.3s ease;
+    transform: translateY(-5px);
+}
+footer {
+    display: flex;
+    gap: 80px;
+    padding: 64px 0;
+    font-family: sans-serif;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: cornsilk; 
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: white; 
+    transform: none;
+}
+
+.copyright-col p {
+    color: cornsilk; 
+    font-size: 13px;
+    margin: 0;
+}
+
+.copyright-col .tech-stack {
+    margin-top: 4px;
+    font-family: monospace;
+    color:cornsilk;
 }

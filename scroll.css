@@ -15,6 +15,7 @@ body,
 .content {
   background-color: var(--color-background, black);
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -65,14 +66,15 @@ main {
 
 /* From Uiverse.io by SachinKumar666 */ 
 .project {
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  width: fit-content;
 }
 
 /* Hover Effects */
