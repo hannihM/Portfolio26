@@ -1,9 +1,8 @@
-
- nav{
+nav{
     gap: 20px;
     display: flex;
     justify-content: flex-end;
-    padding: 20px; 
+    padding: 5px 15px 0 0; 
     position: sticky;
     top: 0;  
 }
@@ -15,14 +14,6 @@ nav a{
     gap: 2px;
     padding: 6px;
     border-radius: 10px;
-}
-nav a:hover{
-    background-color: white;
-    color: black;
-}
-nav a:active{
-    background-color: white;
-    color: black;
 }
 .callout{
     background-color: white;
@@ -89,11 +80,7 @@ nav a:active{
     flex-wrap: wrap;
     align-items: center;
 }
-.projects{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px;
-}
+
 .info{
     display: flex;
     align-items: center;
@@ -118,21 +105,16 @@ a:hover{
     flex-wrap: wrap;
 }
 .service{
-    border: 1px solid white;
+    border: 1px solid rgb(255, 103, 52);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
     transition: all 0.2s ease;
 }
-.service:hover{
-    transition: all 0.3s ease;
-    transform: translateY(-5px);
-}
 footer {
     display: flex;
     gap: 80px;
     padding: 64px 0;
-    font-family: sans-serif;
 }
 
 .footer-col {
@@ -170,6 +152,11 @@ footer {
 
 .copyright-col .tech-stack {
     margin-top: 4px;
-    font-family: monospace;
     color:cornsilk;
+}
+#about li{
+    list-style-type:circle;
+}
+#about li::marker {
+  color: rgb(34, 143, 252);
 }

@@ -15,7 +15,7 @@ body,
 .content {
   background-color: var(--color-background, black);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
@@ -40,6 +40,7 @@ main {
   position: fixed;
   inset: 0;
   height: 100dvh;
+  padding: 10px;
 
   /* Animate the content based on the section scrolling */
   --contrast: 4;
@@ -63,38 +64,44 @@ main {
     visibility: visible;
   }
 }
-
-/* From Uiverse.io by SachinKumar666 */ 
 .project {
   border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
+  margin: 10px;
   background-color: black;
-  width: fit-content;
 }
-
-/* Hover Effects */
-.project:hover {
-  transform: translateY(-10px);
+#projects svg{
+  color: rgb(255, 170, 0);
 }
-
-/* Active State */
-.project:active {
-  transform: translateY(-5px) scale(0.98);
+#services svg{
+  color: rgb(255, 103, 52);
 }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
+#footer svg{
+  color: plum;
+}
+#about svg{
+  color: rgb(34, 143, 252);
+}
+#home svg{
+  color: rgb(83, 181, 242);
+}
+@media screen and (max-width: 1000px){
+  img{
+    display: none;
   }
-  50% {
-    transform: scale(1.2);
+  nav{
+    justify-content: center;
   }
-  100% {
-    transform: scale(1);
+  nav span{
+    display: none;
+  }
+  .service{
+    justify-content: center;
+    text-align: center;
+  }
+  .service svg{
+    width: 3em;
+    height: 3em;
   }
 }
