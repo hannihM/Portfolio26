@@ -1,0 +1,49 @@
+.firefly-container {
+  position: fixed;
+}
+
+/* Firefly Styling */
+.firefly {
+  position: absolute;
+  /* Use the inline variables to set unique starts */
+  left: var(--x);
+  top: var(--y);
+  width: 3px;
+  height: 4px;
+  border-radius: 50%;
+  background: #eef27e;
+  /* Outer glow effect */
+  box-shadow: 0 0 10px #eef27e, 0 0 20px #ffbc00;
+  
+  /* Apply drift and flash animations dynamically */
+  animation: drift var(--d) ease-in-out infinite alternate,
+             flash 3s ease-in-out infinite alternate;
+  /* Offset the animation start based on index */
+  animation-delay: calc(var(--i) * -1.5s);
+}
+
+/* Floating / Drifting Movement */
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    /* Randomize path slightly using math tricks in sub-properties if needed */
+    transform: translate(60px, -50px) scale(1.2);
+  }
+  100% {
+    transform: translate(-40px, -100px) scale(0.9);
+  }
+}
+
+/* Twinkling / Flashing Effect */
+@keyframes flash {
+  0%, 100% {
+    opacity: 0.2;
+    box-shadow: 0 0 4px #eef27e;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px #eef27e, 0 0 25px #ffbc00;
+  }
+}

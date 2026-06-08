@@ -67,8 +67,7 @@ main {
 .project {
   border-radius: 20px;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  padding: 0 10px;
   background-color: black;
 }
 #projects svg{
@@ -76,9 +75,6 @@ main {
 }
 #services svg{
   color: rgb(255, 103, 52);
-}
-#footer svg{
-  color: plum;
 }
 #about svg{
   color: rgb(34, 143, 252);
@@ -98,7 +94,6 @@ main {
   }
   .service{
     justify-content: center;
-    text-align: center;
   }
   .service svg{
     width: 3em;
